@@ -1,9 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"net/http"
+)
 
 func main() {
-	helloWorld()
+	http.ListenAndServe(":8080", nil)
 }
 
 func helloWorld() {
